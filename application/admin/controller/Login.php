@@ -1,5 +1,5 @@
 <?php
-namespace app\index\controller;
+namespace app\admin\controller;
 use think\Controller;
 
 class Login extends Controller
@@ -10,8 +10,8 @@ class Login extends Controller
 
     }
 
-    public function hello($name = 'ThinkPHP5')
+    public function loginAction()
     {
-        return 'hello,' . $name;
+        return $this->fetch();
     }
 }
